@@ -4,6 +4,8 @@ Thank you for your interest in contributing to Deondocs! We welcome contribution
 
 ## How to Contribute
 
+We use a 'dev' branch for ongoing development. Here's how to contribute:
+
 1. **Browse the Documentation**: Explore the existing documentation at [deonhub](https://www.deonhub.tz/docs).
 2. **Identify Areas for Improvement**: Look for unclear explanations, outdated information, missing content, typos, or opportunities to add examples.
 3. **Fork the Repository**: Fork the Deondocs repository on GitHub.
@@ -11,7 +13,7 @@ Thank you for your interest in contributing to Deondocs! We welcome contribution
 5. **Make Your Changes**: Edit the relevant Markdown (.mdx) files in the `content/docs/` directory
 6. **Commit Your Changes**: Make commits with clear messages.
 7. **Push Your Changes**: Push to your fork on GitHub.
-8. **Create a Pull Request**: Create a pull request to the `main` branch of the Deondocs repository
+8. **Create a Pull Request**: Create a pull request to the `dev` branch of the Deondocs repository
 
 ## Review Process
 

@@ -4,6 +4,7 @@ on:
   push:
     branches-ignore:
       - main
+      - dev
     paths:
       - "content/docs/**"
 
@@ -22,4 +23,4 @@ jobs:
           title: "Update docs content"
           body: "This PR updates the docs content. Please review and approve."
           branch: update-docs-content
-          base: main
+          base: dev

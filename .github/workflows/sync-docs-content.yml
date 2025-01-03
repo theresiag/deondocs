@@ -3,7 +3,7 @@ name: Sync Docs Content
 on:
   push:
     branches:
-      - main
+      - dev
     paths:
       - "content/docs/**"
 
@@ -42,6 +42,16 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Sync docs content from deondocs"
+            git commit -m "Sync docs content from deondocs (dev branch)"
             git push
           fi
+
+      - name: Create Pull Request to main
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Sync docs content from dev to main
+          title: "Sync docs content from dev to main"
+          body: "This PR syncs the latest docs content from the dev branch to the main branch."
+          branch: sync-docs-to-main
+          base: main
